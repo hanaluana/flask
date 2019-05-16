@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Wed Webtoon</title>
+</head>
+<body>
+    <h1>수요일의 웹툰</h1>
+    <!--<h2>{{name1}}</h2>-->
+    <!--<img src={{image1}} alt="수달"></img>-->
+    <!--<h2>{{name2}}</h2>-->
+    <!--<img src={{image2}} alt="수달"></img>-->
+    <!--{% for name in names %}-->
+    <!--    <h2>{{name}}</h2>-->
+    <!--{% endfor %}-->
+    <!--{% for image in images %}-->
+    <!--   <img src={{image}} alt="썸네일"></img>-->
+    <!--{% endfor %}-->
+    {% for name in web %}
+        <a href = {{web[name][1]}}>
+        <h2>{{name}}</h2>
+        <img src={{web[name][0]}} alt="썸네일"></img>
+        </a>
+    {% endfor %}
+</body>
+</html>
